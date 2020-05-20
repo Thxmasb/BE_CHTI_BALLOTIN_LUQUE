@@ -34,6 +34,18 @@ De plus, il fallais ensuite chercher un seuil pour lequel nous contions les poin
 Quant à la variable SYSTICKPER correspond à 1 période pour le timer système. La période de traitement est de 5ms. On sait que 72 ticks c'est 1us. Donc 5ms = 72 * 5000 = 36 * 10000 = 360 000.<br>
 <br>
 <h2>Vérification:<br></h2>
+1/ On choisit la durée d'un ech_tick dans la fonction Init_TimingADC_ActiveADC_ff() selon ce que l'ont veut tester:
+<ul>
+  <li>0x33 : sig.1 = 248, bruit = 4 (cas facile)</li>
+  <li>0x52 : sig.1 = 124, bruit = 4, sig.2 = 1000</li>
+  <li>0x3E : sig.1 = 124, bruit = 100</li>
+  <li>0x3C : sig.1 =  31, bruit = 100 (scores nuls)</li>
+  <li>0x31 : sig.1 =  62, bruit = 4 (cas limite, scores incertains) </li>
+ </ul>
+1/ Ajouter un point d'arrêt au début de la boucle infini
+2/ Lancer le debugger
+3/ On ajoute les variables cmpt à la Watch 1 et cmpt[0],[1],[2],[5].
+4/
 
 <h1>Objectif 3 - Gérer le son (étape indépendante):<br></h1>
 
