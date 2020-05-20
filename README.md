@@ -40,13 +40,19 @@ Quant à la variable SYSTICKPER correspond à 1 période pour le timer système.
   <li>0x52 : sig.1 = 124, bruit = 4, sig.2 = 1000</li>
   <li>0x3E : sig.1 = 124, bruit = 100</li>
   <li>0x3C : sig.1 =  31, bruit = 100 (scores nuls)</li>
-  <li>0x31 : sig.1 =  62, bruit = 4 (cas limite, scores incertains) </li>
  </ul>
-1/ Ajouter un point d'arrêt au début de la boucle infini
-2/ Lancer le debugger
-3/ On ajoute les variables cmpt à la Watch 1 et cmpt[0],[1],[2],[5].
-4/
-
+2/ Ajouter un point d'arrêt au début de la boucle infini.<br>
+2/ Lancer le debugger.<br>
+3/ On ajoute les variables cmpt[0],[1],[2],[5] dans le logic analyzer.<br>
+4/ On ajoute score à la Watch 1 également.<br>
+5/ Si l'on à choisi: 
+<ul>
+  <li>0x33 : nous allons voir seulement les scores des 5 joueurs étant sur le signal 1 (k=17,18,19,20,23) et allons visualiser les tirs des joueurs 0,1 et 2 sur le logic analyser; </li>
+  <li>0x52 : nous allons voir le score des 6 joueurs;</li>
+  <li>0x3E : Score des 5 joueurs du signal 1;</li>
+  <li>0x3C : Les scores sont nuls car trop bruités.</li>
+ </ul><br>
+ 
 <h1>Objectif 3 - Gérer le son (étape indépendante):<br></h1>
 
 <h1>Objectif 4 - Projet final :<br></h1>
