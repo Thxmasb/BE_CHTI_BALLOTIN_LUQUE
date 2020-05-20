@@ -41,7 +41,6 @@ Quant à la variable SYSTICKPER correspond à 1 période pour le timer système.
   <li>0x3E : sig.1 = 124, bruit = 100</li>
   <li>0x3C : sig.1 =  31, bruit = 100 (scores nuls)</li>
  </ul>
-2/ Ajouter un point d'arrêt au début de la boucle infini.<br>
 2/ Lancer le debugger.<br>
 3/ On ajoute les variables cmpt[0],[1],[2],[5] dans le logic analyzer.<br>
 4/ On ajoute score à la Watch 1 également.<br>
