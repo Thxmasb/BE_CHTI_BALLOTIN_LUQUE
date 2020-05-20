@@ -11,10 +11,12 @@ Pour vérifié les résulats dans le débugger:<br>
 4/ Observer dans la fenêtre Watch 1 tab[1] qui est bien égal à 0x3FFFCDE5. <br>
 5/ Pour toutes les autres valeurs de k, tab[k] respecte bien les valeurs attendues : tab[k] < 0x0000000F;<br>
 <br>
-Objectif 2 :
+Objectif 2 -  Faire tourner la DFT « en réel » et gérer le score des 6 joueurs:<br>
+<br>
 
-Objectif 3 :
 
-Objectif 4 :
+Objectif 3 - Gérer le son (étape indépendante):<br>
+
+Objectif 4 - Projet final :<br>
 
 
