@@ -8,10 +8,10 @@ int Periode_PWM_en_Tck=360;
 
 typedef struct {
     int position;        // index courant dans le tableau d'echantillons
-    int taille;        // nombre d'echantillons de l'enregistrement
-    short int * son;    // adresse de base du tableau d'echantillons en ROM
-    int resolution;        // pleine echelle du modulateur PWM
-    int Tech_en_Tck;    // periode d'ech. audio en periodes d'horloge CPU
+    int taille;          // nombre d'echantillons de l'enregistrement
+    short int * son;     // adresse de base du tableau d'echantillons en ROM
+    int resolution;      // pleine echelle du modulateur PWM
+    int Tech_en_Tck;     // periode d'ech. audio en periodes d'horloge CPU
 } type_etat;
 
 type_etat etat;
