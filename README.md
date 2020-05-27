@@ -75,5 +75,16 @@ Dans le sujet, il est précisé que la fréquence du PWM doit être largement su
 
 
 <h1>Objectif 4 - Projet final :<br></h1>
+Notre objectif est de réunir tout notre travail en un seul projet qui devra tout traire : sur une séquence de tir laser, le logiciel devra scorer comme prévu et lancer le son associé. <br>
+
+Pour se faire, nous avons repris notre code de l'objectif 3 et de l'objectif 2. Lorsqu'un joueur scorait, on faisait appel à la fonction qui permettait d'envoyer le son. <br>
+
+
+<h2>Vérification:<br></h2>
+1/ Lancer le debugger après avoir compilé tout le projet. <br>
+2/ Ajouter cmpt[0],[1],[2],[3],[4],[5] dans le logic analizer ainsi que TIM3_CCR3. <br>
+3/ Lancer le programme avec un run <br>
+4/ Oberser qu'à chaque point scoré, un son est émis. 
+
 
 
