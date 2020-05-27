@@ -53,6 +53,14 @@ Quant à la variable SYSTICKPER correspond à 1 période pour le timer système.
  </ul><br>
  
 <h1>Objectif 3 - Gérer le son (étape indépendante):<br></h1>
+Notre objectif est de déclencher depuis le main, l'émission d'un son (bruit de verre cassé) dans le logic analyzer. <br>
+<br>
+Tout d'abord on calcule la période en ticks de notre son. Sachant que 72 ticks équivalent à une micro seconde, on obtient la période en ticks directement avec le calcul : 72*PeriodeSonMicroSec. <br>
+<br>
+Dans le sujet, il est précisé que la fréquence du PWM doit être largement supérieure à 20kHz, nous avons donc choisi une fréquence de 200kHz. En période système, celà correspond à 360 ticks. <br>
+
+<h2>Vérification:<br></h2>
+
 
 <h1>Objectif 4 - Projet final :<br></h1>
 
