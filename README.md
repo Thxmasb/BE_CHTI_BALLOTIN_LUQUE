@@ -60,6 +60,18 @@ Tout d'abord on calcule la période en ticks de notre son. Sachant que 72 ticks 
 Dans le sujet, il est précisé que la fréquence du PWM doit être largement supérieure à 20kHz, nous avons donc choisi une fréquence de 200kHz. En période système, celà correspond à 360 ticks. <br>
 
 <h2>Vérification:<br></h2>
+A) Pour observer le son : <br> <br>
+1/ Enlever les points d'arrêts s'il y en a <br> 
+2/ Lancer le debugger <br>
+3/ Faire un clic droit que TIM3_CCR3 et l'ajouter dans le Logic Analizer avec "Add to..." .<br>
+4/ Faire un run et arrêter seulement quand le logic analizer affiche une droite.<br>
+5/ Verifier que le logic analizer est en mode analog avec un clic droit, ensuite faire un "Zoom All" et un "Min/Max Auto". <br>
+
+B) Pour verifier qu'il y a bien 91 micro secondes entre deux échantillons successifs<br>
+1/ Ajouter un point d'arrêt dans le fichier GestionSon.s au niveau du push{r4} (ligne 32). <br>
+2/ Lancer le debugger
+3/ Faire un run jusqu'au point d'arrêt et remmetre à zéro le timer 1. Pour le faire, il suffit d'effectuer un clic droit sur t1 qui se trouve en bas à droite et de cliquer sur "Reset Stop Watch(t1)". <br>
+4/ Faire un deuxième run et observer que la valeur de t1 est bien 91 micro secondes. <br>
 
 
 <h1>Objectif 4 - Projet final :<br></h1>
